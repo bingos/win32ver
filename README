@@ -1,0 +1,37 @@
+Usage: win32ver [OPTIONS]
+
+-q, --quiet     only return errorlevel
+-b, --build     return the build number of the OS
+-v, --version   show version information for win32ver
+-h, --help      show this help message
+-s, --spack     return the Service Pack information
+-r, --release   return the Major and Minor release numbers
+-a, --all       display all available information
+
+Bug reports to win32ver-bugs@kidney-bingos.demon.co.uk
+
+win32ver is a small console utility that shows what the version of Microsoft Windows[tm] that is running.
+
+It returns an errorlevel consistent with the Windows version that is running:
+
+Errorlevel	Windows version
+===============================
+Windows95/98/ME	0
+Windows NT 4	1
+Windows 2000	2
+Windows XP	3
+Windows 2003	4
+Unknown		8
+
+Compiling:
+==========
+
+There are three different Makefiles supplied.
+
+Makefile is for compiling with MinGW gcc and dmake.
+
+Makefile.borland is for compiling with Borland C++ and dmake.
+
+Makefile.msc is for compiling with MS VC++ and nmake.
+
+Enjoy!
